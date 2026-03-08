@@ -21,7 +21,7 @@ jobs:
   build:
     working_directory: ~/DevOpsCA
     docker:
-      - image: circleci/node:16.20
+      - image: cimg/node:16.20
     steps:
       - checkout
       - run:
