@@ -21,7 +21,7 @@ jobs:
   build:
     working_directory: ~/DevOpsCA
     docker:
-      - image: cimg/node:16.20
+      - image: cimg/node:20.18.1
     steps:
       - checkout
       - run:
@@ -38,7 +38,7 @@ jobs:
             - ./node_modules
   deploy:
     docker:
-      - image: cimg/node:16.20
+      - image: cimg/node:20.18.1
     steps:
       - run:
           name: deploy-application
